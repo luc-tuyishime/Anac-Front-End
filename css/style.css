@@ -289,6 +289,9 @@ button {
     display: none;
 
 }
+#successfull-saved-admin{
+  display: none;
+}
 .table-display_ {
     margin: 25px;
     position: relative;

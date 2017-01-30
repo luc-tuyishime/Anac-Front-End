@@ -224,4 +224,10 @@
         $("#table-display-admin,#envoyer-admin").show();
      });
 
+     $("#envoyer-admin").click(function(e){
+        event.preventDefault();
+        $("#data-dispay-admin_").hide();
+         $("#successfull-saved-admin").show();
+     });
+
   });
