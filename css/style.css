@@ -378,7 +378,7 @@ label:hover:before {
 .logo-center img {
     /*max-width: 110px;*/
 
-    height: 66px;
+    height: 90px;
     margin-top: 20px;
 }
 h1 {
@@ -451,9 +451,10 @@ a:hover {
     padding: 1rem;
 }
 .cartix-footer {
-    height: 40px;
+    height: 28px;
 }
-/*suucess saved*/
+
+   /*success saved*/
 
 .success-img {
     display: block;
