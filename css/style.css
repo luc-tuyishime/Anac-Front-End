@@ -34,7 +34,7 @@
 }
 .text-1-table {
     position: relative;
-    top: 40px;
+    top: 20px;
     font-weight: bold;
     font-size: 16px;
     color: #212121;
@@ -271,7 +271,7 @@ button {
     margin-top: 25px;
 }
 .table {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .btn-succes {
     float: right;
@@ -481,6 +481,7 @@ a:hover {
 }
 .anac-box-admin {
     background-color: #fafafa;
+    height: 100%;
 }
 .anac-background-admin {
     background-color: #fafafa;
