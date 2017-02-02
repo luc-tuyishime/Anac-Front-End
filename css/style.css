@@ -109,7 +109,7 @@ dd label input {
     border-radius: 19px;
     border: 1px solid #03a9f4;
     color: #03a9f4;
-    margin-bottom: 18px;
+    margin-bottom: 35px;
 }
 .style-button-connect {
     float: right;
@@ -292,11 +292,7 @@ button {
 #successfull-saved-admin{
   display: none;
 }
-.table-display_ {
-    margin: 25px;
-    position: relative;
-    bottom: 40px;
-}
+
 /* Base for label styling */
 
 [type="checkbox"]:not(:checked),
