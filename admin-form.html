@@ -594,64 +594,62 @@
                   </div>
                   <p class="text-1">XI. Delivrance ANAC /CAA Issuance</p>
                   <p class="text-3">A. Licence ou certificat delivre / Licence or validation certificate Issued</p>
+                  <div class="">
                   <div class="row">
                      <div class="col-md-4">
-                        <p style="font-weight:bold">License
+                        <p style="font-weight:bold"><input type="checkbox" id="test036" />
+                           <label for="test036"></label>License
                         </p>
-                        <form class="form-horizontal">
-                           <div class="form-group">
-                              <label class="control-label"></label>
-                              <div class="col-sm-12">
-                                 <input class="form-control" id="focusedInput" type="text" placeholder="text...">
-                              </div>
-                           </div>
-                        </form>
+                        <div id="delivery1" style="display:none;">
+                         <div class="form-group">
+                           <input type="text" class="form-control text_" id="inputError"  placeholder="Expiration date......">
+                         </div>
+                       </div>
                      </div>
+
                      <div class="col-md-4">
-                        <p style="font-weight:bold">Qualification/Rating(s)
+                        <p style="font-weight:bold"><input type="checkbox" id="test037" />
+                           <label for="test037"></label>Qualification/Rating(s)
                         </p>
-                        <form class="form-horizontal">
-                           <div class="form-group">
-                              <label class="control-label"></label>
-                              <div class="col-sm-12">
-                                 <input class="form-control" id="focusedInput" type="text" placeholder="text...">
-                              </div>
-                           </div>
-                        </form>
+                        <div id="delivery2" style="display:none;">
+                         <div class="form-group">
+                           <input type="text" class="form-control text_" id="inputError"  placeholder="Expiration date....">
+                         </div>
+                       </div>
                      </div>
+
                      <div class="col-md-4">
-                        <p style="font-weight:bold">Autorisation/Authorization
+                        <p style="font-weight:bold"><input type="checkbox" id="test038" />
+                           <label for="test038"></label>Autorisation/Authorization
                         </p>
-                        <form class="form-horizontal">
-                           <div class="form-group">
-                              <label class="control-label"></label>
-                              <div class="col-sm-12">
-                                 <input class="form-control" id="focusedInput" type="text" placeholder="text...">
-                              </div>
-                           </div>
-                        </form>
+                        <div id="delivery3" style="display:none;">
+                         <div class="form-group">
+                           <input type="text" class="form-control text_" id="inputError"  placeholder="Expiration date....">
+                         </div>
+                       </div>
                      </div>
-                     <div class="col-md-6">
-                        <div class="form-group">
-                           <div class="col-sm-12">
-                              <p>Certificat de validation/ Validation Certificate</p>
-                              <input class="form-control" id="focusedInput" type="text" placeholder="Numero de licence...">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
+                    </div>
+                   </div>
+                    <div class="">
+                              <p style="font-weight:bold"><input type="checkbox" id="test039" />
+                                 <label for="test039"></label>Certificat de validation/ Validation Certificate</p>
+                                 <div id="delivery4" style="display:none;">
+                                  <div class="form-group">
+                                    <input type="text" class="form-control text_" id="inputError"  placeholder="Expiration date....">
+                                  </div>
+                                </div>
                         <p>Date (Mois,Jour,Annee)</p>
                         <form id="dateRangeForm" method="post" class="form-horizontal">
                            <div class="form-group">
                         <form class="form-horizontal">
-                        <div class="col-md-10">
+                        <div class="col-md-6">
                         <input class="form-control" type="date" name="bday" min="2000-01-02">
-                        </form>
+                         </form>
                         </div>
-                        </div>
-                        </form>
-                     </div>
-                  </div>
+                      </div>
+                    </form>
+                   </div>
+
                   <div class="">
                      <p class="text-3">B. Autorisation de l’ANAC / CAA Authorisation</p>
                      <form class="form-horizontal form-gender-admin">
@@ -1158,6 +1156,9 @@
              $('#duration').durationPicker();
              $('#duration2').durationPicker({ showSeconds: true, checkRanges: true, totalMax: 259200000 /* 3 days */ });
          });
+
+
+
       </script>
       <script src="js/style.js"></script>
       <!-- <script type="text/javascript" src="js/wickedpicker.js"></script>

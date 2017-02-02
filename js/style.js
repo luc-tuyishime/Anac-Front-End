@@ -231,3 +231,35 @@
      });
 
   });
+  //Checkbox hide and show
+  $("#test036").click(function() {
+    if($(this).is(":checked")) {
+        $("#delivery1").show();
+    } else {
+        $("#delivery1").hide();
+    }
+  });
+
+  $("#test037").click(function() {
+    if($(this).is(":checked")) {
+        $("#delivery2").show();
+    } else {
+        $("#delivery2").hide();
+    }
+  });
+
+  $("#test038").click(function() {
+    if($(this).is(":checked")) {
+        $("#delivery3").show();
+    } else {
+        $("#delivery3").hide();
+    }
+  });
+
+  $("#test039").click(function() {
+    if($(this).is(":checked")) {
+        $("#delivery4").show();
+    } else {
+        $("#delivery4").hide();
+    }
+  });
