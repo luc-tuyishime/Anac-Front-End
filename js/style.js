@@ -54,11 +54,11 @@
         $("#formulaire3").hide();
          $("#formulaire2").show();
     });
-    $("#button4-preview").click(function(e){
-         event.preventDefault();
-        $("#formulaire4").hide();
-         $("#formulaire3").show();
-    });
+    // $("#button4-preview").click(function(e){
+    //      event.preventDefault();
+    //     $("#formulaire4").hide();
+    //      $("#formulaire3").show();
+    // });
     $("#button5-preview").click(function(e){
          event.preventDefault();
         $("#formulaire5").hide();
@@ -66,8 +66,8 @@
     });
     $("#button6-preview").click(function(e){
          event.preventDefault();
-        $("#formulaire6").hide();
-         $("#formulaire5").show();
+        $("#formulaire4").hide();
+         $("#formulaire3").show();
     });
     $("#sauvegarder").click(function(e){
          event.preventDefault();
@@ -231,7 +231,7 @@
      });
 
   });
-  //Checkbox hide and show
+  //Checkbox
   $("#test036").click(function() {
     if($(this).is(":checked")) {
         $("#delivery1").show();
@@ -247,7 +247,6 @@
         $("#delivery2").hide();
     }
   });
-
   $("#test038").click(function() {
     if($(this).is(":checked")) {
         $("#delivery3").show();
@@ -255,11 +254,66 @@
         $("#delivery3").hide();
     }
   });
-
   $("#test039").click(function() {
     if($(this).is(":checked")) {
         $("#delivery4").show();
     } else {
         $("#delivery4").hide();
+    }
+  });
+
+  $("#switch1").click(function() {
+    if($(this).is(":checked")) {
+        $("#form3,.applicant-button3").show();
+    } else {
+        $("#form3").hide();
+    }
+  });
+
+  $("#test1").click(function() {
+    if($(this).is(":checked")) {
+        $("#date-license-A").show();
+    } else {
+        $("#date-license-A").hide();
+    }
+  });
+
+  $("#test2").click(function() {
+    if($(this).is(":checked")) {
+        $("#date-license-b").show();
+    } else {
+        $("#date-license-b").hide();
+    }
+  });
+
+  $("#test3").click(function() {
+    if($(this).is(":checked")) {
+        $("#date-license-c").show();
+    } else {
+        $("#date-license-c").hide();
+    }
+  });
+
+  $("#test4").click(function() {
+    if($(this).is(":checked")) {
+        $("#date-license-d").show();
+    } else {
+        $("#date-license-d").hide();
+    }
+  });
+
+  $("#test5").click(function() {
+    if($(this).is(":checked")) {
+        $("#date-license-e").show();
+    } else {
+        $("#date-license-e").hide();
+    }
+  });
+
+  $("#test010").click(function() {
+    if($(this).is(":checked")) {
+        $("#date-license-f").show();
+    } else {
+        $("#date-license-f").hide();
     }
   });

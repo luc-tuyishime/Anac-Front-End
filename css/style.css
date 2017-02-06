@@ -75,6 +75,7 @@ dd label input {
 .style-button {
     height: 45px;
     width: 85px;
+    margin-bottom: 50px;
     border-radius: 19px;
     border: 1px solid #03a9f4;
     color: #03a9f4;
@@ -85,12 +86,13 @@ dd label input {
     border-radius: 19px;
     border: 1px solid #03a9f4;
     color: #03a9f4;
-    margin-bottom: 17px;
+    margin-bottom: 30px;
     margin-top: 12px;
 }
 .style-button-admin {
     height: 40px;
     width: 85px;
+    margin-bottom: 40px;
     border-radius: 19px;
     border: 1px solid #03a9f4;
     color: #03a9f4;
@@ -102,6 +104,7 @@ dd label input {
     border: 1px solid #03a9f4;
     color: #03a9f4;
     margin-top: 14px;
+    margin-bottom: 40px;
 }
 .style-button-admin5 {
     height: 40px;
@@ -109,7 +112,7 @@ dd label input {
     border-radius: 19px;
     border: 1px solid #03a9f4;
     color: #03a9f4;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 .style-button-connect {
     float: right;
@@ -198,7 +201,7 @@ dd label input {
     font-weight: bold;
 }
 .text-5 {
-    margin-top: 29px;
+
     font-size: 15px;
 }
 .text-6 {
@@ -399,7 +402,7 @@ h1 {
     border-radius: 20px;
     width: 90px;
     height: 37px;
-    margin-top: 15px;
+    margin-bottom: 50px;
 }
 .btn-pwd:hover {
     color: white;
@@ -560,4 +563,43 @@ a:hover {
 }
 .table-container{
   margin: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.applicant-button3{
+  /*position:relative;
+   left: 0%;
+   margin-top:50%;*/
+}
+#date-license-A{
+  display: none;
+}
+#date-license-b{
+  display: none;
+}
+#date-license-c{
+display: none;
+}
+#date-license-d{
+  display: none;
+}
+#date-license-e{
+  display: none;
+}
+#date-license-f{
+  display: none;
 }
