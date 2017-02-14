@@ -30,11 +30,11 @@
     $("#sauvegarder").click(function(e){
          event.preventDefault();
         $(".anac-background,.profile-name").hide();
-         $("#table-display").show();
+         $("#table-applicant").show();
     });
     $("#envoyer").click(function(e){
          event.preventDefault();
-        $(".table-responsive").hide();
+        $("#table-applicant").hide();
          $("#successfull-saved").show();
     });
 
@@ -74,11 +74,11 @@
         $(".anac-background").hide();
          $("#table-display").show();
     });
-    $("#envoyer").click(function(e){
-         event.preventDefault();
-        $(".table-responsive").hide();
-         $("#successfull-saved").show();
-    });
+    // $("#envoyer").click(function(e){
+    //      event.preventDefault();
+    //     $(".table-responsive").hide();
+    //      $("#successfull-saved").show();
+    // });
  });
 
 

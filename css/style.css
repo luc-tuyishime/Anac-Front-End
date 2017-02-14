@@ -121,17 +121,21 @@ dd label input {
 }
 .anac-box {
     background-color: #fafafa;
+    height: 100%;
+    position: absolute;
     position: fixed;
+    top: 0;
     right: 0;
-    float: right;
+    bottom: 0;
 }
+
 .anac-img {
     display: block;
     margin: 0 auto;
-    margin-top: 75px;
     margin-top: 95px;
-    margin-bottom: 100%;
+    /*margin-bottom: 100%;*/
 }
+
 .anac-img-admin {
     display: block;
     margin: 0 auto;
@@ -142,10 +146,12 @@ dd label input {
     margin-bottom: 100%;
 }
 .saved {
-    margin-top: 50px;
+  position: fixed;
+  width: 50%;
+  display: none;
 }
-/*formmulaire2*/
 
+  /*formmulaire2*/
 .nom-complet {
     margin-top: 20px;
     font-weight: bold;
@@ -402,7 +408,7 @@ h1 {
     border-radius: 20px;
     width: 90px;
     height: 37px;
-    margin-bottom: 50px;
+    margin-bottom: 100%;
 }
 .btn-pwd:hover {
     color: white;
@@ -484,7 +490,13 @@ a:hover {
 }
 .anac-box-admin {
     background-color: #fafafa;
-    height: 100%;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+
 }
 .anac-background-admin {
     background-color: #fafafa;
@@ -549,9 +561,9 @@ a:hover {
     margin-top: 5px;
 }
 .anac-box-admin {
-    position: fixed;
+    /*position: fixed;
     right: 0;
-    float: right;
+    float: right;*/
 }
 #envoyer-admin {
     display: none;
@@ -561,7 +573,11 @@ a:hover {
   position: relative;
   bottom: 15px;
 }
-.table-container{
+.table-responsive{
+  display: block;
+  margin: 0 auto;
+}
+.table-margin{
   margin: 10px;
 }
 

@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="css/style.css" type="text/css">
       <link rel="stylesheet" href="css/bootstrap-toggle.css" type="text/css">
       <link href="css/bootstrap-multiselect.css" rel="stylesheet" type="text/css"/>
+        <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
       <link rel="shortcut icon" href="img/cartix-favicon.png" type="image/x-icon">
       <link rel="stylesheet" media="screen and (min-width:300px)" href="css/style-app.css" type="text/css">
    </head>
@@ -610,15 +611,15 @@
             </div>
             <div class="col-md-6 anac-box">
                <div class="row">
-                  <div class="anac-background">
+                   <div class="anac-header">
                      <span class="anac2">ANAC</span>
                      <a href="sign-in.html"><button type="button" class="btn btn-default style-button-connect">Se Connecter</button></a>
+                   </div>
+                     <div class="anac-background">
                      <img class="anac-img" src="img/watermark.png">
-                  </div>
+                    </div>
                   <div id="table-display">
-                     <span class="anac2">ANAC</span>
-                     <a href="sign-in.html"><button type="button" class="btn btn-default style-button-connect">Se Connecter</button></a>
-                     <div class="table-container">
+                     <div class="table-margin" id="table-applicant">
                         <table class="table">
                            <thead>
                               <tr>
@@ -755,13 +756,15 @@
                         </table>
                         <button type="button" class="btn btn-success btn-succes" id="envoyer">Envoyer</button>
                      </div>
-                     <div class="saved" id="successfull-saved">
-                        <img src="img/success.png"class="success-img">
-                        <h3 class="demande-envoyer">Votre demande à été reçue</h3>
-                        <p class="demande-envoyer2">Merci d’avoir envoyer vos informations. Un message de confirmation vous<br>
-                           parviendra dans les 24 heures à suivre.<img src="img/emoji.png">
-                        </p>
-                     </div>
+
+                  </div>
+                  <div class="saved" id="successfull-saved">
+                     <img src="img/success.png"class="success-img">
+                     <h3 class="demande-envoyer">Votre demande à été reçue</h3>
+                     <p class="demande-envoyer2">Merci d’avoir envoyer vos informations. Un message de confirmation vous<br>
+                        parviendra dans les 24 heures à suivre.<img src="img/emoji.png">
+                     </p>
+
                   </div>
                </div>
             </div>
