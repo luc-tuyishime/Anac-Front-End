@@ -114,8 +114,20 @@
 
      $("#sauvegarder2").click(function(e){
         event.preventDefault();
-       $("#formulaire-admin6,#table-display-admin").hide();
-        $("#formulaire-admin7,.anac-background-admin").show();
+       $("#table-display-admin").hide();
+        $("#table-display-admin2").show();
+     });
+
+     $("#btn_envoyer").click(function(e){
+        event.preventDefault();
+       $("#table-display-admin2").hide();
+        $(".saved").show();
+     });
+
+     $("#recommencer").click(function(e){
+        event.preventDefault();
+       $("#formulaire-admin6,#successfull-saved-admin").hide();
+        $("#formulaire-admin0,.anac-background-admin").show();
      });
        /*Precedent*/
        $(document).ready(function(){
@@ -151,83 +163,83 @@
      $("#Voir-data1").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data2").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data3").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data4").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data5").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data6").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data7").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data8").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data9").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data10").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data11").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data12").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data13").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data14").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
      $("#Voir-data15").click(function(e){
         event.preventDefault();
        $(".anac-background-admin").hide();
-        $("#table-display-admin,#envoyer-admin").show();
+        $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
 
      $("#envoyer-admin").click(function(e){
         event.preventDefault();
-        $("#data-dispay-admin_").hide();
-         $("#successfull-saved-admin").show();
+        $("#formulaire-admin0,#envoyer-admin").hide();
+         $("#formulaire-admin1").show();
      });
 
   });

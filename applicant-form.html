@@ -51,11 +51,11 @@
                            </div>
                         </div>
                         <div class="col-md-4">
-                           <div class="form-group has-error has-feedback">
+                           <div class="form-group">
                               <label class=" control-label" for="inputError"></label>
                               <div class="col-sm-12">
-                                 <input type="text" class="form-control" id="inputError">
-                                 <span class="glyphicon glyphicon-remove form-control-feedback"></span>
+                                 <input type="text" class="form-control" id="inputError"  placeholder="prenoms">
+
                               </div>
                            </div>
                         </div>
@@ -620,131 +620,21 @@
                     </div>
                   <div id="table-display">
                      <div class="table-margin" id="table-applicant">
-                        <table class="table">
-                           <thead>
+                       <div class="table-container">
+                          <h4 class="title">Formulaire de demande afficher :</h4>
+                         <table class="table">
+                            <thead>
+                               <tr>
+                                  <th></th>
+                                  <th>No</th>
+                                  <th>Question</th>
+                                  <th></th>
+                                  <th></th>
+                                  <th>Réponse</th>
+                               </tr>
+                            </thead>
+                            <tbody>
                               <tr>
-                                 <th></th>
-                                 <th>No</th>
-                                 <th>Question</th>
-                                 <th></th>
-                                 <th></th>
-                                 <th>Réponse</th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                              <tr class="active">
-                                 <td></td>
-                                 <td></td>
-                                 <td>Licence ATE:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>oui</td>
-                              </tr>
-                              <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Noms:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>AGBASSE Charlie</td>
-                              </tr>
-                              <tr class="active">
-                                 <td></td>
-                                 <td></td>
-                                 <td>Numero Passeport :</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>BE 167480</td>
-                              </tr>
-                              <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Taille:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>200</td>
-                              </tr>
-                              <tr class="active">
-                                 <td></td>
-                                 <td></td>
-                                 <td>Date de naissance:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>18/7/1950</td>
-                              </tr>
-                              <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Addresse permanente:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Route da-Cotonou</td>
-                              </tr>
-                              <tr class="active">
-                                 <td></td>
-                                 <td></td>
-                                 <td>Ville:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>cotonou</td>
-                              </tr>
-                              <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Nationalite:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Beninoise</td>
-                              </tr>
-                              <tr class="active">
-                                 <td></td>
-                                 <td></td>
-                                 <td>Etat:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Cotonou</td>
-                              </tr>
-                              <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Pays postal:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Benin</td>
-                              </tr>
-                              <tr class="active">
-                                 <td></td>
-                                 <td></td>
-                                 <td>Code Postal:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>01BP 305</td>
-                              </tr>
-                              <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Lieu de naissance:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Dakar</td>
-                              </tr>
-                              <tr class="active">
-                                 <td></td>
-                                 <td></td>
-                                 <td>Numero de Telephone:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>+229 9547</td>
-                              </tr>
-                              <tr>
-                                 <td></td>
-                                 <td></td>
-                                 <td>Courriel:</td>
-                                 <td></td>
-                                 <td></td>
-                                 <td>test@anac.b</td>
-                              </tr>
-                              <tr class="active">
                                  <td></td>
                                  <td></td>
                                  <td>Demande de:</td>
@@ -752,11 +642,400 @@
                                  <td></td>
                                  <td>Delivrance Initiale</td>
                               </tr>
-                           </tbody>
-                        </table>
-                        <button type="button" class="btn btn-success btn-succes" id="envoyer">Envoyer</button>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Licence ATE:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>oui</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Noms:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.firstname +" "+ appl.lastname}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Numero Passeport :</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.passport}}</td>
+                               </tr>
+
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Date de naissance:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.birthdate}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Addresse permanente:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.address}}</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Taille:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.height}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Ville et etat</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.city +", "+appl.province}}</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Pays:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.country}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Code Postal:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.postal}}</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Lieu de naissance:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.birthplace}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Nationalite:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.nationality}}</td>
+                               </tr>
+
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Numero de Telephone:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.telephone}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Courriel:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.email}}</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Poids:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.weight}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Taille:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.height}}</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Gender:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Male</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Hair:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.email}}</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Eyes:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.eyes}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Type of Licence:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.licensetype}}</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>License Number:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.licensenumber}}</td>
+                               </tr>
+                                <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>Date de delivrance:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.issuedate}}</td>
+                               </tr>
+                               <tr>
+                                  <td></td>
+                                  <td></td>
+                                  <td>Francais:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.french}}</td>
+                               </tr>
+                               <tr class="active">
+                                  <td></td>
+                                  <td></td>
+                                  <td>English:</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>{{appl.english}}</td>
+                               </tr>
+                            </tbody>
+                         </table>
                      </div>
 
+                     <h4 class="title2">Demande de License afficher :</h4>
+                     <div class="table-container">
+                       <table class="table">
+                          <thead>
+                             <tr>
+                                <th></th>
+                                <th>No</th>
+                                <th>Question</th>
+                                <th></th>
+                                <th></th>
+                                <th>Réponse</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                               <td></td>
+                               <td></td>
+                               <td class="style">A. Test de Connaissance :</td>
+                               <td></td>
+                               <td></td>
+                               <td></td>
+                            </tr>
+
+                            <tr>
+                               <td></td>
+                               <td></td>
+                               <td>Canditaure a un test de connaissance:</td>
+                               <td></td>
+                               <td></td>
+                               <td>oui</td>
+                            </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Test de connaissance theorique:</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Date de delivrance:</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="style">B. Test pratique:</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Aeronef a utiliser :</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Nombre d’heures de vol</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Total des Heures de vol</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="style">C. Eleve sorti(e) d’un organisme :</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Nom de l’organisme et addresse</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Numero d’agreement</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Intitule de la formation</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Date de la fin de formation</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td class="style">D. Detenteur d’une licence :</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Pays</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Type de license</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Numero de license</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Qualification</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td class="style">E. Competences Militaire :</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Service</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Date de qualification:</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Echelon ou grade</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+                             <tr class="active">
+                                <td></td>
+                                <td></td>
+                                <td>Date du dernier controle</td>
+                                <td></td>
+                                <td></td>
+                                <td>oui</td>
+                             </tr>
+
+                          </tbody>
+                       </table>
+                      <button type="button" class="btn btn-success btn-succes" id="envoyer">Envoyer</button>
+                   </div>
                   </div>
                   <div class="saved" id="successfull-saved">
                      <img src="img/success.png"class="success-img">
