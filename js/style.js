@@ -1,3 +1,32 @@
+var room = 1;
+function education_fields() {
+  room++;
+  var objTo = document.getElementById('education_fields')
+  var divtest = document.createElement("div");
+divtest.setAttribute("class", "form-group removeclass"+room);
+var rdiv = 'removeclass'+room;
+  divtest.innerHTML = '<div class="col-sm-4 nopadding"><div class="form-group"><input type="text" class="form-control" id="Schoolname" name="Schoolname[]" value="" placeholder="Nom et Prenoms"></div></div><div class="col-sm-4 nopadding"><div class="form-group"><input type="text" class="form-control" id="Major" name="Major[]" value="" placeholder="Titre"></div></div><div class="col-sm-4 nopadding"><div class="form-group"><input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="Telephone"></div></div><div class="col-sm-4 nopadding"><div class="form-group"><input type="text" class="form-control" id="Degree" name="Degree[]" value=""placeholder="Telecopieur"></div></div><div class="col-sm-4 nopadding"><div class="form-group"><input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="Adresse Electronique"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><div class="input-group"><div class="input-group-btn"><button class="btn btn-danger" type="button" onclick="remove_education_fields('+ room +');"> <i class="fa fa-minus"></i> </button></div></div></div></div><div class="clear"></div></div>';
+  objTo.appendChild(divtest)
+}
+ function remove_education_fields(rid) {
+   $('.removeclass'+rid).remove();
+ }
+
+ var room = 1;
+function education_fields2() {
+   room++;
+   var objTo = document.getElementById('education_fields2')
+   var divtest = document.createElement("div");
+divtest.setAttribute("class", "form-group removeclass"+room);
+var rdiv = 'removeclass'+room;
+   divtest.innerHTML = '<div class="col-sm-3 nopadding"><div class="form-group"><input type="text" class="form-control" id="Schoolname" name="Schoolname[]" value="" placeholder="Aeronef"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><input type="text" class="form-control" id="Major" name="Major[]" value="" placeholder="Type"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="Model"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="Immatriculation"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><input type="text" class="form-control" id="Nationalite" name="Degree[]" value="" placeholder="Nationalite"></div></div><div class="col-sm-3 nopadding"><div class="form-group"><input type="text" class="form-control" id="Degree"name="Degree[]" value="" placeholder="Nombre de Passagers"></div></div><div class="col-sm-4 nopadding"><div class="form-group"><input type="text" class="form-control" id="Degree" name="Degree[]" value="" placeholder="Capacite charge de Marchandises"></div></div><div class="col-sm-2 nopadding"><div class="form-group"><div class="input-group"><div class="input-group-btn"><button class="btn btn-danger" type="button" onclick="remove_education_fields('+ room +');"> <i class="fa fa-minus"></i> </button></div></div></div></div><div class="clear"></div></div>';
+   objTo.appendChild(divtest)
+}
+  function remove_education_fields2(rid) {
+   $('.removeclass'+rid).remove();
+  }
+
+
 /*Aplicant Part*/
 /*Hide and SHow Page*/
 /*Suivant*/
@@ -37,6 +66,7 @@
         $("#table-applicant").hide();
          $("#successfull-saved").show();
     });
+
 
  });
 
@@ -274,58 +304,34 @@
     }
   });
 
-  $("#switch1").click(function() {
-    if($(this).is(":checked")) {
-        $("#form3,.applicant-button3").show();
-    } else {
-        $("#form3").hide();
-    }
-  });
-
   $("#test1").click(function() {
     if($(this).is(":checked")) {
-        $("#date-license-A").show();
+        $(".section-b").show();
     } else {
-        $("#date-license-A").hide();
+        $(".section-b").hide();
     }
   });
 
   $("#test2").click(function() {
     if($(this).is(":checked")) {
-        $("#date-license-b").show();
+        $(".section-b-second").show();
     } else {
-        $("#date-license-b").hide();
+        $(".section-b-second").hide();
     }
   });
 
   $("#test3").click(function() {
     if($(this).is(":checked")) {
-        $("#date-license-c").show();
+        $(".section-b-third").show();
     } else {
-        $("#date-license-c").hide();
+        $(".section-b-third").hide();
     }
   });
 
   $("#test4").click(function() {
     if($(this).is(":checked")) {
-        $("#date-license-d").show();
+        $(".section-b-fourth").show();
     } else {
-        $("#date-license-d").hide();
-    }
-  });
-
-  $("#test5").click(function() {
-    if($(this).is(":checked")) {
-        $("#date-license-e").show();
-    } else {
-        $("#date-license-e").hide();
-    }
-  });
-
-  $("#test010").click(function() {
-    if($(this).is(":checked")) {
-        $("#date-license-f").show();
-    } else {
-        $("#date-license-f").hide();
+        $(".section-b-fourth").hide();
     }
   });

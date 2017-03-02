@@ -1,3 +1,7 @@
+html,body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
 .anac {
     font-size: 25px;
     font-weight: bold;
@@ -218,7 +222,7 @@ dd label input {
     display: none;
 }
 .form-gender {
-    margin-top: 15px;
+    ;
 }
 .form-gender-admin {
     margin-top: 15px;
@@ -664,4 +668,33 @@ display: none;
 }
 #table-display-admin2{
   display: none;
+}
+.text-bold{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.entry:not(:first-of-type)
+{
+    margin-top: 10px;
+}
+
+.glyphicon
+{
+    font-size: 12px;
+}
+.btn-success{
+  border: 1px solid gray;
+  border-radius: 40px;
+}
+.button-section-2{
+  position: relative;
+  top: 80px;
+  left: 5px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-size: 12px;
+}
+.panel-footer{
+  font-size: 15px;
 }
