@@ -159,6 +159,8 @@ dd label input {
     margin: 0 auto;
     margin-top: 95px;
     /*margin-bottom: 100%;*/
+    width: 100%;
+    height: auto;
 }
 
 .anac-img-admin {
