@@ -335,3 +335,23 @@ var rdiv = 'removeclass'+room;
         $(".section-b-fourth").hide();
     }
   });
+
+
+
+
+
+
+
+  $(document).ready(function(){
+    $("#pagination1").click(function(e){
+       event.preventDefault();
+      $("#section2").hide();
+       $("#section1").show();
+    });
+
+     $("#pagination2").click(function(e){
+        event.preventDefault();
+       $("#section1").hide();
+        $("#section2").show();
+     });
+   });

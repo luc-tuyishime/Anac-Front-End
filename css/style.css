@@ -520,8 +520,6 @@ a:hover {
 .anac-box-admin {
     background-color: #fafafa;
 
-
-
 }
 .anac-background-admin {
     background-color: #fafafa;
@@ -699,4 +697,45 @@ display: none;
 }
 .panel-footer{
   font-size: 15px;
+}
+
+
+/*search*/
+p {font-size: 16px;}
+  .margin2 {
+  margin-top: 25px;
+  float: right;
+}
+.anac-title{
+  text-align: center;
+  font-weight: bold;
+}
+.text-link{
+  text-align: justify;
+  margin-top: 40px;
+  color: #9e9e9e;
+}
+.a_style{
+  color: #757575;
+}
+.link_style:hover{
+  color: #03a9f4;
+  cursor:pointer;
+}
+.glyphicon-search{
+  font-size: 18px;
+}
+
+.bg-1 {
+    background-color: #0277bd; /* Green */
+    color: #ffffff;
+}
+.bg-2 {
+  background-color: #0277bd; /* Green */
+  color: #ffffff;
+
+  padding-bottom: 70px;
+}
+#section2{
+display: none;
 }
