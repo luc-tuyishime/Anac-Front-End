@@ -110,8 +110,6 @@ var rdiv = 'removeclass'+room;
     //      $("#successfull-saved").show();
     // });
  });
-
-
   /*Admin Part*/
   /*Suivant*/
   $(document).ready(function(){
@@ -349,17 +347,15 @@ var rdiv = 'removeclass'+room;
    });
 
    $('input[name=radiocheck]').click( function() {
-
        $('input[id^="test"]').attr("checked", false);
        $(this).attr('checked', true);
    });
 
-
    $(document).ready(function(){
    $("#envoyer-admin").click(function(e){
-      event.preventDefault();
-      $("#table-display-admin").hide();
-       $("#formulaire-section2").show();
+    event.preventDefault();
+    $("#table-display-admin").hide();
+    $("#formulaire-section2").show();
    });
 
    $("#sauvegarder-admin").click(function(e){
