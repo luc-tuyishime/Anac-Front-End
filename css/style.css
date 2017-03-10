@@ -437,6 +437,9 @@ h1 {
     width: 90px;
     height: 37px;
 }
+.achevee{
+
+}
 
 
 .btn-pwd:hover {
@@ -712,30 +715,55 @@ p {font-size: 16px;}
 }
 .text-link{
   text-align: justify;
-  margin-top: 40px;
+  margin-top: 20px;
   color: #9e9e9e;
 }
 .a_style{
   color: #757575;
 }
 .link_style:hover{
-  color: #03a9f4;
+  color: #36b9eb;
   cursor:pointer;
 }
 .glyphicon-search{
   font-size: 18px;
 }
 
-.bg-1 {
+.bg-01 {
     background-color: #0277bd; /* Green */
     color: #ffffff;
+    padding-bottom: 70px;
+
 }
 .bg-2 {
   background-color: #0277bd; /* Green */
   color: #ffffff;
-
-  padding-bottom: 70px;
 }
 #section2{
 display: none;
+}
+.anac-margin{
+  padding-top: 70px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+
+.btn span.glyphicon {
+	opacity: 0;
+}
+.btn.active span.glyphicon {
+	opacity: 1;
+}
+
+
+#formulaire-section2{
+  display: none;
 }

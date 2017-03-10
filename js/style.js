@@ -96,8 +96,8 @@ var rdiv = 'removeclass'+room;
     });
     $("#button6-preview").click(function(e){
          event.preventDefault();
-        $("#formulaire4").hide();
-         $("#formulaire3").show();
+        $("#formulaire3").hide();
+         $("#formulaire2").show();
     });
     $("#sauvegarder").click(function(e){
          event.preventDefault();
@@ -156,8 +156,8 @@ var rdiv = 'removeclass'+room;
 
      $("#recommencer").click(function(e){
         event.preventDefault();
-       $("#formulaire-admin6,#successfull-saved-admin").hide();
-        $("#formulaire-admin0,.anac-background-admin").show();
+       $("#formulaire-admin6,#successfull-saved-admin,.admin-profile").hide();
+        $(".anac-background-admin").show();
      });
        /*Precedent*/
        $(document).ready(function(){
@@ -266,11 +266,7 @@ var rdiv = 'removeclass'+room;
         $(".table-display__,#table-display-admin,#envoyer-admin").show();
      });
 
-     $("#envoyer-admin").click(function(e){
-        event.preventDefault();
-        $("#formulaire-admin0,#envoyer-admin").hide();
-         $("#formulaire-admin1").show();
-     });
+
 
   });
   //Checkbox
@@ -338,10 +334,6 @@ var rdiv = 'removeclass'+room;
 
 
 
-
-
-
-
   $(document).ready(function(){
     $("#pagination1").click(function(e){
        event.preventDefault();
@@ -355,3 +347,24 @@ var rdiv = 'removeclass'+room;
         $("#section2").show();
      });
    });
+
+   $('input[name=radiocheck]').click( function() {
+
+       $('input[id^="test"]').attr("checked", false);
+       $(this).attr('checked', true);
+   });
+
+
+   $(document).ready(function(){
+   $("#envoyer-admin").click(function(e){
+      event.preventDefault();
+      $("#table-display-admin").hide();
+       $("#formulaire-section2").show();
+   });
+
+   $("#sauvegarder-admin").click(function(e){
+      event.preventDefault();
+     $("#formulaire-section2").hide();
+      $("#successfull-saved-admin").show();
+   });
+ });
